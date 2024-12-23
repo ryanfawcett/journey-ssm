@@ -17,6 +17,7 @@
 
     <modules>
         <module>journey-ssm-log</module>
+        <module>journey-ssm-spring-quickstart</module>
     </modules>
 
 </project>
