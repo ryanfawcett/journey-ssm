@@ -1,7 +1,6 @@
 package org.example.quickstart.service.impl;
 
 import org.example.quickstart.service.AnnotationUserService;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 // @Component("annotationUserService")

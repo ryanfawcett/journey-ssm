@@ -14,7 +14,7 @@ public class Application {
     public static void main(String[] args) {
         ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
         UserService userService = ctx.getBean(UserService.class);
-
+        userService.save();
 
         // DataSource dataSource = ctx.getBean(DataSource.class);
         // System.out.println("dataSource = " + dataSource);
