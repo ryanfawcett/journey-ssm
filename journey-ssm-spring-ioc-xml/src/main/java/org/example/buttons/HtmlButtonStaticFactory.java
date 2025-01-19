@@ -7,7 +7,7 @@ public class HtmlButtonStaticFactory {
         // NOOP
     }
 
-    public static HtmlButton createHtmlButtonInstance() {
+    public static HtmlButton createHtmlButton() {
         return htmlButton;
     }
 }

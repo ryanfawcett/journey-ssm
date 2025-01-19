@@ -3,12 +3,11 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
     <!-- No args constructor bean -->
-    <bean id="roundHole" class="org.example.round.RoundHole"/>
+    <bean id="htmlButton" class="org.example.buttons.HtmlButton"/>
     <!-- Static Factory -->
-    <bean id="htmlButton1" class="org.example.buttons.HtmlButtonStaticFactory" factory-method="createHtmlButtonInstance"/>
-
+    <bean id="staticFactoryHtmlBtn" class="org.example.buttons.HtmlButtonStaticFactory" factory-method="createHtmlButton"/>
     <!-- Inject Bean by using instance factory method -->
-    <bean id="htmlButtonFactory" class="org.example.buttons.HtmlButtonFactory"/>
+    <bean id="btnFactory" class="org.example.buttons.HtmlButtonFactory"/>
     <!-- Note: the factory method must be non-static -->
-    <bean id="htmlButtonInstance" factory-bean="htmlButtonFactory" factory-method="createHtmlButtonInstance"/>
+    <bean id="factoryHtmlBtn" factory-bean="btnFactory" factory-method="createHtmlButton"/>
 </beans>

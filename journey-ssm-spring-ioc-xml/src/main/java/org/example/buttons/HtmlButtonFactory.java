@@ -10,7 +10,7 @@ public class HtmlButtonFactory {
         // NOOP
     }
 
-    public HtmlButton createHtmlButtonInstance() {
+    public HtmlButton createHtmlButton() {
         return htmlButton;
     }
 }
